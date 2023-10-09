@@ -1,0 +1,155 @@
+body{
+font-family: 'Lato', sans-serif;
+margin: 0;
+
+}
+
+h1,h2{
+    text-align: center;
+}
+.inputSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #bdcae6;
+}
+.inputSection label{
+    font-weight: bold;
+    margin-right: 8px;
+}
+.inputSection input[type="number"],.inputSection input[type="date"]{
+    padding: 5px;
+    margin-right: 8px;
+}
+.inputSection button{
+    padding: 5px 8px;
+    background-color: #0a3d62;
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.expenseList{
+    margin: 8px;
+    
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+border: 1px solid #ddd;
+padding: 6px;
+text-align: left;
+}
+th{
+    border-color: #0a3d62;
+    color: #898585;
+}
+
+tfoot td{
+    font-weight: bold;
+}
+.deleteBtn{
+    padding: 5px 10px;
+    background-color: #0a3d62;
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* ============================media - q=========== */
+@media screen and (max-width: 442px){
+    .inputSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+        background-color: #bdcae6;
+    }
+    .inputSection label{
+        font-weight: bold;
+        margin-right: 2px;
+    }
+    .inputSection input[type="number"],.inputSection input[type="date"]{
+        padding: 3px;
+        margin-right: 3px;
+    }
+    .inputSection button{
+        padding: 2px 5px;
+        background-color: #0a3d62;
+        color: aliceblue;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .expenseList{
+        margin: 4px;
+        
+    }
+    th, td{
+        border: 1px solid #ddd;
+        padding: 3px;
+        text-align: left;
+        }
+        .deleteBtn{
+            padding: 3px 4px;
+            background-color: #085993;
+            color: aliceblue;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+}
+@media screen and (max-width: 619px){
+    .inputSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px;
+        background-color: #bdcae6;
+        
+    }
+    .inputSection label{
+        font-weight: bold;
+        margin-right: 6px;
+    }
+    .inputSection input[type="number"],.inputSection input[type="date"]{
+        padding: 6px;
+        margin-right: 3px;
+    }
+    .inputSection button{
+        padding: 6px 9px;
+        background-color: #0a3d62;
+        color: rgb(214, 220, 225);
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .expenseList{
+        margin: 4px;
+        
+    }
+    th, td{
+        border: 1px solid #ddd;
+        padding: 9px;
+        text-align: left;
+        }
+        .deleteBtn{
+            padding: 6px 9px;
+            background-color: #085993;
+            color: aliceblue;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .inputSection{
+            width: 100%;
+            height: 30vh;
+        }
+}
+    

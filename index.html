@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENCE TACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Lato&family=Pacifico&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <h1>Expence Tracker App</h1>
+    <div class="inputSection">
+        <label for="categorySelect">Category:</label>
+        <select id="categorySelect">
+            <option value="Food And Beverage">Food And Beverage</option>
+            <option value="Rent">Rent</option> 
+            <option value="Transport">Transport</option>
+            <option value="Relaxing">Relaxing</option>
+        </select>
+        <label for="amountInput">Amount:</label>
+        <input type="number" id="amountInput">
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput">
+        <button id="addBtn">Add</button>
+    </div>
+    <div class="expenseList">
+        <h2>Expense List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categories</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="totalAmount"></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
